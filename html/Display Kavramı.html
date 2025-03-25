@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!--
+        ! display:block elemanı inline,inline elemanı block yapabilmemizi sağlıyor ayrıca kelimeleri gizleyedebiliyoruz.
+    -->
+
+  <style>
+    p {
+      display: inline; /* Çok iyi bir etiket.*/
+      /* display: block; yaparsak block oluyor */
+    }
+
+    span {
+      display: none; /* Yok etmeye yarıyor */
+    }
+  </style>
+
+  <body>
+    <p>
+      <em
+        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eos
+      </em>
+    </p>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <span
+      >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+      at?</span
+    >
+  </body>
+</html>

@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  background-color: #3f4f44;
+  height: 150px;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  color: #a27b5c;
+  cursor: pointer;
+}
+
+.container-1 ul {
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  list-style: none;
+}
+
+.container-1 ul li {
+  margin-right: 20px;
+  display: inline;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4cqh;
+}
+
+.container-1 ul li a {
+  color: #dcd7c9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container-1 ul li:hover {
+  background-color: #a27b5c;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  height: 140px;
+  margin: 40px 0px;
+}
+
+.container-2 h2 {
+  padding-bottom: 20px;
+}
+
+.container-2 a {
+  text-decoration: none;
+  padding-bottom: 30px 20px;
+  width: 120px;
+  text-align: center;
+  color: #ecdfcc;
+  line-height: 50px;
+  border-radius: 2cqh;
+  background-color: #7a1cac;
+  margin-bottom: 20px;
+  transition: 300ms all;
+}
+
+.container-2 a:hover {
+  background-color: #ad49e1;
+}
+
+.container-2 h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-3 h2 {
+  text-align: center;
+}
+
+.all-courses {
+  display: flex;
+  padding: 30px 40px;
+}
+
+.course {
+  display: flex;
+  padding: 20px;
+  border: 2px solid transparent;
+  border-radius: 3cqh;
+  margin: 10px;
+}
+
+.course:hover {
+  border-color: #3f4f44;
+}
+
+.course img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 3cqh;
+  margin-right: 20px;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-left: 15px;
+  flex-grow: 1;
+}
+
+.course-info h3 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.course-info p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  display: flex;
+
+  justify-content: center;
+  padding: 40px 0px;
+  background-color: #3f4f44;
+}
+
+.container-5 p {
+  color: #dcd7c9;
+  word-spacing: 2px;
+  text-align: center;
+}

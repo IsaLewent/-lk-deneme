@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--
+
+        ! Grid-template-rows ve columns satırdaki ve sütündaki kutuların width height ayarını yapar.
+
+        ? repeat fonksiyonu ztn kelime analamından da anlaşılacağı üzere tekrar etmesini ve uzun uzadıya işlemlerin kolaylığını sağlıyor.
+
+        * Repeat fonksiyonunun içine minmax fonksiyonunu yazarak ekranı bğyğtğp küçültüp büyütme işlemlerini değiştirdiğimiz fonksiyondur.
+
+        ! Grid-area:En basit yolu bu grid-template için.
+
+        ? Row-gap:Ztn ismindende anlaşılacağı gibi açıklık satırlar arası.
+
+        * Span yayılmasını sağlıyor.
+
+        ! fr ise tüm cihazlarla uyumlu bir görüntü oluşturmaya yarayan uzunluk birimi.
+
+    -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        /* grid-template-rows: repeat(3, 300px);
+        grid-template-columns: repeat(6, minmax(50px, 150px)); */
+        /* grid-template: repeat(3, 300px) / repeat(4, minmax(50px, 200px));/* /* İlk kısım row ikinci kısım columns */
+        grid-template-columns: 1fr 1fr 1fr; /* Bunu yapmamızın amacı responsive yani tüm cihazlarda uyumlu bir site yapabilmek like apple*/
+        /* grid-template-rows: 1fr 1fr 2fr 2fr; */
+        /* row-gap: 10px;
+        column-gap: 10px; */
+        grid-template-areas:
+          "a a b"
+          "c c c" /* b yi iki yerde kullanamayız. */
+          "d d .";
+      }
+
+      .box {
+        text-align: center;
+        font-size: 32px;
+        color: white;
+      }
+      .box1 {
+        background-color: black;
+        /* grid-row-start: 2;
+        grid-row-end: span 3;
+        grid-column-start: 2;
+        grid-column-end: span 3; */
+        /* grid-row: 2 / span 3; /* Böyle de basit yolu var .*/
+        /* grid-column: 2 / span 3;
+        grid-area: 2 /2 / span 3 / span 3;*/ /* Bu da en basit yolu  */
+        grid-area: a;
+      }
+      .box2 {
+        background-color: aquamarine;
+        grid-area: b;
+      }
+      .box3 {
+        background-color: bisque;
+        grid-area: c;
+      }
+      .box4 {
+        background-color: brown;
+        grid-area: d;
+      }
+      .box5 {
+        background-color: blue;
+      }
+      .box6 {
+        background-color: blueviolet;
+      }
+      .box7 {
+        background-color: chartreuse;
+      }
+      .box8 {
+        background-color: yellow;
+      }
+      .box9 {
+        background-color: darkgreen;
+      }
+      .box10 {
+        background-color: azure;
+        color: black;
+      }
+      .box11 {
+        background-color: crimson;
+      }
+      .box12 {
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      <div class="box box5">5</div>
+      <div class="box box6">6</div>
+      <div class="box box7">7</div>
+      <div class="box box8">8</div>
+      <div class="box box9">9</div>
+      <div class="box box10">10</div>
+      <div class="box box11">11</div>
+      <div class="box box12">12</div>
+    </div>
+  </body>
+</html>

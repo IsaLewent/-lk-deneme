@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--
+        ! animation-name ile @keyframes olarak belirlediğimiz animasyonu çağırıyoruz
+        
+        ? animation-duration: 4s; ile animasyonun toplam süresini belirliyoruz
+
+        * animation-iteration-count:infinite ile sınırsız döngüye sokmasını sağlıyoruz.
+
+        ! animation-direction: alternate; ile aralardaki geçişin eşit olmasının ve keskinliğini ayarlıyoruz.
+
+        ?  from başlangıç to ise bitiş veyahut 0% 25% ... gibi de kullanabiliriz.
+
+        * @keyframes ile animasyon ismi ayarlıyoruz.
+    -->
+
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        margin-left: 5px;
+        margin-top: 50px;
+        background-color: blueviolet;
+        border-radius: 4cqh;
+        animation-name: deneme;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes deneme {
+        /* from {
+          background-color: blueviolet;
+        }
+
+        to {
+          background-color: aqua;
+        } */
+
+        0% {
+          background-color: blueviolet;
+          transform: rotate(0deg);
+        }
+
+        25% {
+          background-color: aqua;
+          margin-left: 100px;
+          transform: rotate(25deg);
+          transition-duration: 4s;
+        }
+
+        50% {
+          background-color: bisque;
+          margin-left: 200px;
+          transform: rotate(50deg);
+          transition-duration: 4s;
+        }
+
+        75% {
+          background-color: black;
+          margin-left: 150px;
+          transform: rotate(25deg);
+          transition-duration: 4s;
+        }
+
+        100% {
+          background-color: brown;
+          margin-left: 100px;
+          transform: rotate(0deg);
+          transition-duration: 4s;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>

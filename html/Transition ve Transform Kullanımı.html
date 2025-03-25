@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--
+
+      ! transition all genellikle en fazla kullanılan ve süre ayarlanılan bir şey
+
+      ? transform rotate(deg)ne kadar açı ile döneceğini belirliyoruz.
+
+      * transform scale kaç kat artış olacağını belirlemeye yarar.hp
+
+    -->
+
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+        border-radius: 3cqh;
+        background-color: blueviolet;
+        transition: all 300ms;
+      }
+
+      div:hover {
+        width: 250px;
+        height: 250px;
+        border-radius: 3cqh;
+        background-color: rgb(89, 216, 216);
+        transform: rotate(50deg);
+        /* transform: scale(1.2); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

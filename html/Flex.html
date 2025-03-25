@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--
+
+        ! 1-Row-reverse:Satırları tersten yazdırıyor.
+        
+        ! 2-Column-reverse:Sutünları tersten yazdırmaya yarıyor.
+
+        ? Felxte daha fazla kutu eklersek kutular küçülür ve biz kutaların küçülmesini istemiyorsak flex-wrap kullanırız.
+
+        ? 1-flex-wrap: wrap taşma yapma ve alt satıra geç anlamına gelir.
+
+        * Justify-content:Tüm elemanları belirli yere göre dizmeye yarıyor(orta,son,başlangıç gibi)ve flex direction eğer rowssa yatayda column ise dikeyde ortalar.
+        
+        * 1-Space-evenly:Her bir nesnenin arasına eşit boşluklar bırakır.
+
+        * 2-Space-around:Her bir nesneni sağına ve soluna ör 1 birim boşluk bırakır ve 2 nesne arasında 2 birim boşluk olur.
+        
+        * 3-Space between:İlk ve son nesne sonda diğer nesneler arasında eşit boşluklar olur.
+
+        ! Align-items:Sıralama yarar eğer flex direction rowsa align items dikey,column ise yatayda sıralama yapar aslında justify-content ile tam ters çalışıyor.
+
+        ! 1-Baseline ise hepsinin tam ortasından yan yana sıralar.
+
+        ? Align-content:Bütün nesnleri seçer ve tüm elemanları aynı işleme tabi tutar.
+        
+        * Order ise nesnelere verdiğimiz değerleri karşılaştırır ve küçükten büyüğe doğru sırlamaya yardım eder.
+
+        ! Flex-grow:Kalan boşluğu atadığımız nesneye aktarır ve onu büyütür.
+
+         ? Align-self:Belirli bir nesneyi istediğimiz yere koymaya(sona başa ortaya gibi koymamızı sağlıyor)yarar.
+
+    -->
+
+    <style>
+      .container {
+        display: flex; /* Sıralamaya yarar */
+        flex-direction: row; /* Yönünü ayarlamaya yarar */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: center;
+        gap: 5px 10px ; /* İlk yazılan değer row ikinci ise column olur */
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        margin: 10px;
+        color: #fff;
+        text-align: center;
+        line-height: 150px;
+        border-radius: 3cqh;
+        transition: all 300ms;
+      }
+
+      .box1{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(194, 16, 16);
+        line-height: 200px;
+      }
+
+      .box2{
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+        background-color: black;
+        order: -14;
+        flex-grow:1;
+      }
+
+      .box1{
+        order: -12;
+        align-self: center;
+      }
+
+      .box1:hover{
+        transform: rotate(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="box">1</div>
+      <div class="box box1">2</div>
+      <div class="box box2">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+
+  </body>
+</html>

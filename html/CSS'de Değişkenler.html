@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!--
+        ! CSS de değişkenlerin amacı tamamen birden fazla işi daha kısa hale getirip tek seferde değiştirmek ve böylelikle zamandan ve uğraşmaktan baya bir tasarruf ediyoruz. 
+    -->
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --renk: #696969;
+      --köşegen: 3.6em;
+      --varsayilan-genişlik: 300px;
+    }
+
+    .container {
+      margin: 20px;
+    }
+
+    .box1 {
+      width: var(--varsayilan-genişlik);
+      height: 200px;
+      background-color: brown;
+      margin-bottom: 20px;
+      border-radius: var(--köşegen);
+    }
+
+    .box2 {
+      width: var(--varsayilan-genişlik);
+      height: 200px;
+      border-radius: var(--köşegen);
+      background-color: var(--renk);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+</body>
+
+</html>

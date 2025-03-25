@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!--
+        ! position:Pozisyonunun nerede olacağını bağlayacağımız şeye göre ayarlar.
+
+        ? absolute:Bağladığımız blok kısmıdır.
+
+        ! relative:Bağlayacağımız yerdir.
+
+        * position-fixed=position-sticky'dir aynı zamanda.
+
+        ? background-size: contain resim eklediğimizde tam sığdırıyor.
+    -->
+
+  <style>
+    body {
+      position: relative;
+      background-size: contain;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: baseline;
+      align-content: center;
+    }
+
+    .div1 {
+      width: 200px;
+      height: 400px;
+      background-color: purple;
+      position: absolute;
+
+      border-radius: 8cqh;
+      box-sizing: border-box;
+    }
+
+    .div2 {
+      width: 200px;
+      height: 400px;
+      background-color: pink;
+      border-radius: 10cqh;
+      box-sizing: border-box;
+    }
+
+    .div3 {
+      width: 200px;
+      height: 400px;
+      background-color: aqua;
+      right: 400px;
+      border-radius: 10cqh;
+      box-sizing: border-box;
+    }
+
+    p {
+      text-align: center;
+      padding-top: 50px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+          eligendi recusandae explicabo aperiam quibusdam? Eum quod iusto illo
+          sequi voluptate? Perferendis veritatis provident dicta magnam, hic eos
+          voluptates possimus error nostrum mollitia inventore magni dolor
+          consequuntur esse debitis? Reiciendis ipsa repudiandae facilis nihil
+          deserunt ab reprehenderit omnis sed alias voluptatum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

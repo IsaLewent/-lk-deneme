@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HevaAlağni</title>
+
+    <style>
+      /* body {
+          background-color: #303c3d;
+          background-image: url("https://images.unsplash.com/photo-1516429943561-f89f04f29aff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNoaWxsfGVufDB8fDB8fHww");
+          background-attachment: fixed;  Yukarı aşağı kaydırdığımızda resmin hareket etmesini engelliyor.
+          background-repeat: no-repeat;  Resmin durmadan tekrarlamasını engelliyor
+          background-position: center; Resmin poziyonunu ayarlıyor.
+        }  */
+
+      /* Kısa Hali */
+
+      body {
+        background: #4c585b no-repeat fixed;
+        background-image: url("https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+      }
+
+      .div1 {
+        position: sticky;
+        top: 10px;
+      }
+
+      .section1 {
+        color: #fcc737;
+        background-color: #fcc737;
+        margin-left: 35%;
+        margin-top: 5%;
+        margin-right: 35%;
+        border: 5px solid;
+        border-radius: 6cqh;
+        padding-bottom: 5%;
+        padding-top: 2%;
+      }
+
+      header {
+        box-sizing: border-box;
+      }
+
+      h1 {
+        margin-top: 5%;
+        color: #7e1891;
+        text-align: center;
+        font-style: italic;
+      }
+
+      form {
+        color: #f8fafc;
+        text-align: center;
+      }
+
+      label {
+        word-spacing: 4px;
+        letter-spacing: 2px;
+        color: #7e1891;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .metin {
+        border-radius: 8px;
+        background-color: beige;
+        font-size: large;
+        width: 250px;
+      }
+      .butons {
+        color: #fcc737;
+        border-radius: 10px;
+        background-color: #7e1891;
+        font-size: medium;
+        height: 30px;
+      }
+
+      h2 {
+        color: #7e1891;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+        font-style: italic;
+      }
+      .div2 {
+        margin-left: 42%;
+        margin-top: 5%;
+        box-sizing: border-box;
+      }
+
+      a {
+        color: #000000;
+      }
+
+      a:hover {
+        color: red;
+      }
+
+      .section2 {
+        width: 300px;
+        height: 250px;
+        text-align: center;
+        background-color: #fcc737;
+        border-radius: 5cqh;
+        color: #2e5077;
+      }
+
+      ul {
+        width: 200px;
+        height: 100px;
+      }
+
+      .list {
+        color: #fcc737;
+        background-color: #7e1891;
+        width: 60px;
+        height: 30px;
+        margin-right: 20px;
+        border-radius: 3cqh;
+      }
+      p {
+        margin-left: 45%;
+        width: 200px;
+        color: #f8fafc;
+        background-color: #7e1891;
+        text-align: center;
+        border: 5px;
+        border-radius: 5cqh;
+        border-color: #7e1891;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>~HAVAALANI KAYIT~</h1></header>
+    <div class="div1">
+      <section class="section1">
+        <form action="" method="post">
+          <span><h2>~Kayıt Formu~</h2></span>
+
+          <label for="Kul">İsim-Soyisim:</label><br />
+          <input
+            class="metin"
+            type="text"
+            name="Kul"
+            id="Kul"
+            placeholder="İsim-Soyisim giriniz:"
+            autocomplete="off"
+            required
+          />
+
+          <br />
+          <br />
+
+          <label for="Meslek">Meslek:</label><br />
+          <input
+            class="metin"
+            type="text"
+            name="job"
+            id="Meslek"
+            placeholder="Mesleğinizi giriniz:"
+            autocomplete="off"
+            required
+          />
+
+          <br />
+          <br />
+
+          <label for="hno">Havaalanı Numarası:</label><br />
+          <input
+            class="metin"
+            type="text"
+            name="hno"
+            id="hno"
+            placeholder="Havaalanı numarasını girin:"
+            autocomplete="off"
+            required
+          />
+
+          <br />
+          <br />
+
+          <input
+            class="butons"
+            type="submit"
+            name="add"
+            id="add"
+            value="EKLE"
+          />
+
+          <input
+            class="butons"
+            type="submit"
+            name="delete"
+            id="sil"
+            value="SİL"
+          />
+
+          <input
+            class="butons"
+            type="submit"
+            name="update"
+            id="güncelle"
+            value="GÜNCELLE"
+          />
+          <br />
+          <br />
+
+          <input class="list" type="submit" value="LİSTE" />
+        </form>
+      </section>
+    </div>
+
+    <p>Bu Hava numarası zaten mevcut</p>
+
+    <div class="div2">
+      <section class="section2">
+        <span><h3>Bana Ulaşmak İçin</h3></span>
+        <ul type="circle">
+          <a target="_blank" href="https://www.instagram.com/isalewent/"
+            ><li>@İsa Levent</li></a
+          >
+          <br />
+          <li>Telefon:0533 295 38 23</li>
+          <br />
+          <li>Adres:Elazığ/Merkez</li>
+        </ul>
+
+        <span><h3>Size Yardımcı Olalım</h3></span>
+        <ul>
+          <a href=""><li>Müşteri Hizmetleri</li></a>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

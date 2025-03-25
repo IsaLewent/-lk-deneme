@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+            ! select:Pencereden eleman seçmemize yarar.
+
+            ? textarea:Adres gibi uzun metin gerektiren yerlerde kullanılır.
+
+            ! datalist:Otomatik tamamlama işlevini yerine getiren etikettir.
+
+            ! input list:Data listin id si ile aynı olmalı ki kutucuğa      tıkladığımızda seçenekler görünsün.
+         -->
+
+    <label for="araba">Araba seç:</label>
+    <select name="araba" id="araba">
+      <option>BMW</option>
+      <option>Mercedes</option>
+      <option>Fiat</option>
+      <option>Volvo</option>
+    </select>
+
+    <br />
+    <br />
+
+    <label for="alan">Eklemek istediklerinizi giriniz:</label>
+
+    <br />
+
+    <textarea cols="30" rows="10" id="alan"></textarea>
+
+    <br />
+    <br />
+
+    <label for="browsers">Tarayicilar</label>
+    <input type="text" list="browsers" id="browsers" />
+
+    <datalist id="browsers">
+      <option value="FireFox">firefox</option>
+      <option value="Chrome">Chrome</option>
+      <option value="Safari">Safari</option>
+      <option value="Opera">Opera</option>
+      <option value="Microsoft">Microsoft</option>
+    </datalist>
+  </body>
+</html>

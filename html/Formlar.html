@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar-1</title>
+  </head>
+  <body>
+    <!--
+            ! Form:HTML'de form yapmammızı sağlar.
+
+            ? action:Formu yönlendireleceği yeri ayarlar.
+
+            ! label:label CSS için.
+
+            ? for:For id ye odaklanıp aynı kullaniici adi kısmına tikaldiğinda da kutucuğa gelmesini sağlıyor.p
+
+            ! placeholder:Yertutucu anlamına gelir ve çubuğun soluk yazı yazmamıız sağlar.
+
+            ? autocomplete=İmleci kutucuğun üzerine getirdiğimizde önceden kaydedilenleri açıp kapamaya yarar.
+
+            ! required:Zorunlu demek ve zorunlu girilecek yerleri uyarır.
+
+            ? hidden:Gizli yapar.
+        -->
+
+    <form method="get">
+      <label for="Kullanici-adi">Kullanici adi</label><br />
+      <input
+        type="text"
+        name="Kullanici"
+        id="Kullanici-adi"
+        placeholder="Kullanici adinizi giriniz."
+        autocomplete="off"
+      />
+
+      <br />
+      <br />
+
+      <label for="sifre">Şifre:</label><br />
+      <input
+        type="password"
+        name="Şifre"
+        id="sifre"
+        placeholder="Sifrenizi giriniz."
+      />
+
+      <br />
+      <br />
+
+      <label for="sec">Seçmeli</label><br />
+      <input type="checkbox" name="Seçmeli" id="sec" />
+
+      <br />
+      <br />
+
+      <label for="tarih">Tarih giriniz:</label><br />
+      <input type="date" id="tarih" />
+
+      <br />
+      <br />
+
+      <label for="e-mail">E-posta adresinizi giriniz:</label><br />
+      <input type="email" id="e-mail" />
+
+      <br />
+      <br />
+
+      <label for="tel">Lütfen telefon numaranızı giriniz:</label><br />
+      <input type="tel" name="" id="tel" />
+
+      <br />
+      <br />
+
+      <label for="Renk">Renk seçiniz:</label><br />
+      <input type="color" name="Renk" id="Renk" />
+
+      <br />
+      <br />
+
+      <label for="">Cinsiyetinizi seçiniz:</label><br />
+      <label for="e">Erkek</label>
+      <input type="radio" name="cinsiyet" id="e" />
+
+      <label for="k">Kadın</label>
+      <input type="radio" name="cinsiyet" id="k" />
+
+      <br />
+      <br />
+
+      <input type="submit" name="Gönder" value="Gönder" id="düğme" />
+    </form>
+  </body>
+</html>

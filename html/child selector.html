@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!--
+
+    ! div p divin altındaki tüm paragraflar sectionların içlerindeki p lerde dahil olmak üzere...
+
+    ? div > p divin çocukları yani bu sefer sectionların altındaki paragraflar dahil değil.
+f
+    -->
+
+  <style>
+    div > p {
+      color: red;
+      background-color: blue;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum totam,
+        illum fugiat quod, molestiae nemo possimus omnis laudantium, suscipit
+        tempora repellendus earum sunt accusantium nihil ipsam dolores eligendi
+        odio. Excepturi earum quod, deserunt sint ratione culpa delectus rem
+        soluta vero.
+      </p>
+
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque nulla
+          omnis harum. Tempore nam id officiis exercitationem autem aliquam
+          porro, veniam nemo dolor bfatae vel, ipsum ea, similique assumenda
+          quaerat dolorem. Maiores, nulla accusantium. Vero minima amet
+          assumenda ullam illum?
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

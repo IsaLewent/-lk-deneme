@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!-- 
+    ! "#" id belirler.
+  
+    ? "." classı belirler.
+
+    ! başında p olması türünü belirler.
+        
+    ? class isimlerinde boşluk olmaması lazım '-' koyulması lazım.
+
+    ! aynı CSS si uygualyacaksak yanına virgül koya koya yine aynı işlemleri yapabilriz.
+  -->
+
+  <style>
+    p,
+    h4 {
+      color: rgb(209, 198, 198);
+      background-color: rgb(9, 9, 12);
+    }
+
+    p.content {
+      color: black;
+      background-color: red;
+    }
+    .align {
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis
+      vitae sed tenetur aliquid repellat voluptate nobis autem reprehenderit
+      consectetur, officia temporibus excepturi molestias praesentium eos quos
+      quidem sunt ipsam accusantium nemo sapiente laboriosam esse? Deleniti est,
+      ipsum et distinctio nisi iure laborum omnis. Impedit eos, voluptatum id
+      odit ad consequuntur ducimus ab amet quaerat inventore exercitationem
+      atque dolore obcaecati!
+    </p>
+
+    <p class="content align">
+      <!--Aradaki boşluk farklı bir sınıf daha var anlamına gelir.-->
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In deleniti,
+      officiis aut nobis illo totam autem sunt iusto ipsa? Officiis?
+    </p>
+
+    <h2 class="content align">Başlık</h2>
+
+    <h4 c lass="align">Başlık 2</h4>
+  </body>
+</html>

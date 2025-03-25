@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        </head>
+    <body>
+
+        <!--
+            ! table:HTML de tablo oluturmaya yarar.
+
+            ? thead:tablonun baş kısmını.
+
+            ! tbody:tablonun gövede kısmını oluşturmaya yarar.
+
+            ? tr:table row anlamına gelir tablonun satırlarını oluşturmamızı sağlar.
+
+            ! th:table heading anlamına gelir ve başlıkları yazmamızı sağlar.
+
+            ? rowspan:astırları birleştirir.
+
+            ! colspan:sutünları birleştirir.
+
+            ? caption:Tabloya başlık vermeye yarar.
+
+            ! align=center,left,right kelimeleri yerleştirir.
+        -->
+        
+        <table border="2">
+
+            <caption><h4>Tablolara Giriş</h4></caption>
+
+            <thead align="center"> 
+
+                <tr>
+                    <th>Başlik 1 </th>
+                    <th>Başlik 2 </th>
+                    <th>Başlik 3 </th>
+                    <th>Başlik 4 </th>
+                </tr>
+
+            </thead>
+
+            <tbody align="center">
+
+                <tr>    
+                    <td>İçerik 1</td>
+                    <td>İçerik 2</td>
+                    <td>İçerik 3</td>
+                    <td rowspan="2">İçerik 4 <br>ve <br> İçerik 7</td>
+                </tr>
+                
+                <tr font style="color: rgb(3, 241, 55);">
+                    <td colspan="2">içerik 5</td>
+                    <td>içerik 6</td>
+                </tr>
+                </tbody>
+            </table>
+                
+                <br>    
+                <hr>
+            
+                <table border="1">  
+
+                    <caption><h4>Hayvanlar</h4></caption>
+
+                    <thead>
+
+                        <tr>
+                            <td>Hayvanla İlgili Bilgi</td>
+                            <td>Adi</td>
+                            <td>Renk</td>
+                            <td>Tür</td>
+                            <td>Bölge</td>
+                            <td>Hayvanin</td>
+                            <td>Resmi</td>
+                        </tr>
+
+                    </thead>
+                    
+                    <tbody>
+
+                        <tr>    
+                            <td><a target="_blank" href="https://tr.wikipedia.org/wiki/Maymun"> Bilgiye git. </a></td>
+                            <td> Maymun </td>   
+                            <td> Kahverengi</td>
+                            <td> Memeli</td>
+                            <td> Orman</td>
+                            <td colspan="2"><img src="meymun resmi.jpeg" alt="Resim bulunamadi" title="Meymun" width="100%" height="50" ></td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td><a target="_blank" href="https://crh.wikipedia.org/wiki/Fil"> Bilgiye git. </a></td>
+                            <td> Fil </td>
+                            <td> Gri </td>
+                            <td> Memeli</td>
+                            <td> Afrika</td>
+                            <td colspan="2"><img src="fil resmi.jpeg" alt="Resim Bulunamadi" title="Fil" height="50" width="100%" ></td>
+                        </tr>
+
+                    </tbody>
+            </table>
+    </body>
+</html>

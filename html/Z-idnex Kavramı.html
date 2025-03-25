@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--
+    
+        ? z-index:Hangi nesnenin öne çıkacağını belirler sayıların bir önem yoktur sadece aralarında kimin daha büyük olduğunun önemi vardır.
+
+    -->
+
+    <style>
+      .box {
+        position: absolute;
+      }
+
+      .box1 {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        background-color: aquamarine;
+        z-index: 2;
+      }
+
+      .box2 {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        background-color: yellow;
+        z-index: 1;
+      }
+
+      .box3 {
+        width: 200px;
+        height: 200px;
+        margin: 30px;
+        background-color: rgb(233, 14, 14);
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+  </body>
+</html>
