@@ -1,0 +1,24 @@
+$myFontSize: 50px;
+$myFontFamily: Helvatica, sans-serif;
+$myColor: red;
+$myWidth: 600px;
+$myPadding: 20px;
+
+body {
+  font-family: $myFontFamily;
+  background-color: $myColor;
+  font-size: $myFontSize;
+}
+
+.container {
+  padding: $myPadding;
+  background-color: aqua;
+  position: relative;
+
+  p {
+    position: sticky;
+    top: 10px;
+    background-color: $myColor;
+    padding: $myPadding;
+  }
+}

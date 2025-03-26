@@ -1,0 +1,17 @@
+body {
+  font-family: Helvatica, sans-serif;
+  background-color: red;
+  font-size: 50px;
+}
+
+.container {
+  padding: 20px;
+  background-color: aqua;
+  position: relative;
+}
+.container p {
+  position: sticky;
+  top: 10px;
+  background-color: red;
+  padding: 20px;
+}
