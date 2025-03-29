@@ -1,0 +1,15 @@
+$bg-color: black;
+body {
+  background-color: $bg-color;
+  color: black;
+}
+
+@if $bg-color == black {
+  body {
+    color: white;
+  }
+} @else if $bg-color == white {
+  body {
+    color: black;
+  }
+}
