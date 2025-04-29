@@ -34,11 +34,12 @@
   width: 0%;
   height: 4px;
   background-color: #e2dfd0;
-  left: 0;
+  left: 50%;
   bottom: -1px;
   border-radius: 20px;
   position: absolute;
   transition: 500ms all;
+  transform: translateX(-50%);
 }
 .navbar li:hover::after {
   width: 100%;

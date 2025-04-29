@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/html/img/pexels-gdtography-277628-911758.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 20px;
+  margin: 15px 0px;
+}
+
+.navbar h1 {
+  color: #f5eedd;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.container ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container ul li {
+  margin-right: 25px;
+  list-style: none;
+  position: relative;
+}
+
+.container ul li::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 50%;
+  bottom: -6px;
+  background-color: #f5eedd;
+  transform: translateX(-50%);
+  transition: 500ms all ease-in-out;
+}
+
+.container ul li:hover::after {
+  width: 100%;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: #f5eedd;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  margin: 30px 0px;
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.hero h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #f5eedd;
+}
+
+.hero p {
+  color: #f5eedd;
+}
+
+.container-hero .cta-button {
+  color: #ecdfcc;
+  padding: 15px 40px;
+  border-radius: 2rem;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  border: 2px solid #697565;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+span {
+  background-color: #ecdfcc;
+  position: absolute;
+  width: 0%;
+  height: 99%;
+  bottom: 0;
+  left: 0;
+  transition: 500ms all;
+  border-radius: 2rem;
+  z-index: -1;
+}
+
+.cta-button:hover {
+  border: none;
+  color: #697565;
+}
+
+.cta-button:hover span {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero p {
+  margin: 5px 15px 0px 0px;
+}
+
+.container-main {
+  margin: 20px 0px 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  color: #f5eedd;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main h2 {
+  text-align: center;
+  color: #f5eedd;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+.container-main-left {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container-main-right {
+  margin: 0 auto;
+}
+
+.container-main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.container-main-info img {
+  border-radius: 3rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  margin-bottom: 20px;
+}
+
+.container-main-info p {
+  margin: 10px 0px 10px 0px;
+}
+
+footer {
+  text-align: center;
+  background-color: #f5eedd;
+  padding: 30px;
+  color: #183b4e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

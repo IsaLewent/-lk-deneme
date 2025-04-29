@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  position: relative;
+}
+
+.container-headerall {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container-header {
+  max-height: 100%;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 300px;
+}
+
+.header-info h2 {
+  font-size: 60px;
+}
+
+.header-info p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+span {
+  font-size: 200px;
+  max-width: 600px;
+}
+
+.active {
+  margin-right: 20px;
+}

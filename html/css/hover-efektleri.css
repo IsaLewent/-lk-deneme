@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  background-color: #123431;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 300px 40px 0px 40px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.title {
+  filter: brightness(0);
+  margin-right: 5px;
+  transition: 0.5s ease;
+}
+
+.list .title:hover {
+  filter: brightness(1);
+  transform: translateZ(120px);
+}
+
+.list .title:hover + .title {
+  filter: brightness(0.6);
+  transform: translateZ(60px) rotateY(40deg);
+}
+
+/* .list .title:hover + * + .title {
+  filter: brightness(0.3);
+  transform: translateZ(30px) rotateY(20deg);
+} */
+
+.list .title:has(+ *:hover) {
+  filter: brightness(0.6);
+  transform: translateZ(60px) rotateY(-40deg);
+}
+
+/* .list .title:has(+ * + *:hover) {
+  filter: brightness(0.3);
+  transform: translateZ(30px) rotateY(-20deg);
+} */
